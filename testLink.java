@@ -1,6 +1,6 @@
 import saud.*;
 
-public class letsNacho {
+public class testLink {
 
   public static void main(String[] args) {
 
@@ -10,5 +10,6 @@ public class letsNacho {
     }
 
     myList.printList();
+
   }
 }
