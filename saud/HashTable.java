@@ -3,7 +3,7 @@ package saud;
 public class HashTable {
 
   final static int ARR_LENGTH = 10;
-  SinglyLinkedList[] arr;
+  Object[] arr; // eventually see if some way to specify type of array once we know it in constructor / at runtime
 
   // the hashCode is the sum of each character of the string's numerical representation
   int hashCode(String key) {
@@ -17,7 +17,8 @@ public class HashTable {
   }
 
   public HashTable() {
-    arr = new SinglyLinkedList[ARR_LENGTH]; // using 10 as length for now, eventually use dynamic ArrayList once that is implemented
+    arr = new Object[ARR_LENGTH]; // using 10 as length for now, eventually use dynamic ArrayList once that is implemented
+    // continue from here
   }
 
   public void add(String key, String value) {
@@ -25,7 +26,8 @@ public class HashTable {
     int index = hashCode % ARR_LENGTH;
 
     if (arr[index] == null) {
-      arr[index] = new SinglyLinkedList // stopping here because realized I really need to add generic type functionality to my linked lists before I can go any further
+      arr[index] = new SinglyLinkedList<Integer>(4);
     }
+    // continue from here
   }
 }

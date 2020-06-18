@@ -1,21 +1,21 @@
 package saud;
 
-public class SinglyLinkedList {
+public class SinglyLinkedList<T> {
 
-  SinglyLinkedNode head;
+  SinglyLinkedNode<T> head;
 
-  public SinglyLinkedList(int d) {
-    head = new SinglyLinkedNode(d);
+  public SinglyLinkedList(T d) {
+    head = new SinglyLinkedNode<T>(d);
   }
 
-  public void appendToTail(int d) {
-    SinglyLinkedNode current = head;
+  public void appendToTail(T d) {
+    SinglyLinkedNode<T> current = head;
 
     while (current.next != null) {
       current = current.next;
     }
 
-    current.next = new SinglyLinkedNode(d);
+    current.next = new SinglyLinkedNode<T>(d);
   }
 
   public void printList() {
@@ -24,7 +24,7 @@ public class SinglyLinkedList {
     System.out.println();
   }
 
-  private void printListHelper(SinglyLinkedNode start) {
+  private void printListHelper(SinglyLinkedNode<T> start) {
     if (start.next == null) {
       System.out.print(start.data + "]");
     } else {

@@ -1,11 +1,11 @@
 package saud;
 
-public class SinglyLinkedNode {
+public class SinglyLinkedNode<T> {
 
-    SinglyLinkedNode next = null;
-    int data;
+    SinglyLinkedNode<T> next = null;
+    T data;
 
-    public SinglyLinkedNode(int d) {
+    public SinglyLinkedNode(T d) {
 	     data = d;
     }
 
