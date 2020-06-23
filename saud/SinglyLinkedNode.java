@@ -9,4 +9,12 @@ public class SinglyLinkedNode<T> {
 	     data = d;
     }
 
+    public SinglyLinkedNode<T> next() {
+      return next;
+    }
+
+    public T data() {
+      return data;
+    }
+
 }

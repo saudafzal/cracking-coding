@@ -8,6 +8,10 @@ public class SinglyLinkedList<T> {
     head = new SinglyLinkedNode<T>(d);
   }
 
+  public SinglyLinkedNode<T> head() {
+    return head;
+  }
+  
   public void appendToTail(T d) {
     SinglyLinkedNode<T> current = head;
 
