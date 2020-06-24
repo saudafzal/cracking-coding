@@ -32,7 +32,7 @@ public class q2p2 {
     myList.appendToTail("d");
     myList.appendToTail("e");
 
-    System.out.println(myList);
+    myList.printList();
 
     System.out.println("The 1 to last element is: " + kToLast(myList, 1).data());
     System.out.println("The 2 to last element is: " + kToLast(myList, 2).data());

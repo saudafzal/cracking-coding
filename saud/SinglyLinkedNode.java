@@ -17,4 +17,11 @@ public class SinglyLinkedNode<T> {
       return data;
     }
 
+    public void setNext(SinglyLinkedNode<T> next) {
+      this.next = next;
+    }
+
+    public void setData(T data) {
+      this.data = data;
+    }
 }

@@ -11,7 +11,7 @@ public class SinglyLinkedList<T> {
   public SinglyLinkedNode<T> head() {
     return head;
   }
-  
+
   public void appendToTail(T d) {
     SinglyLinkedNode<T> current = head;
 
@@ -28,6 +28,9 @@ public class SinglyLinkedList<T> {
     System.out.println();
   }
 
+  // implement toString() at some point
+  // also implement a method to append a node by passing the node, instead of passing the data to be contained in the node
+  
   private void printListHelper(SinglyLinkedNode<T> start) {
     if (start.next == null) {
       System.out.print(start.data + "]");
