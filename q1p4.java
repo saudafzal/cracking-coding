@@ -13,6 +13,9 @@ import java.util.*;
 // words separated by spaces (again, as in the "Tact Coa" example). Also, my program is case-sensitive,
 // which could be changed or made into an option selected by the user.
 
+// In the book solution, they made a hashtable themselves using an array and with the assumption
+// that the only characters we care about are a-z. That's an interesting and better solution.
+
 public class q1p4 {
 
   private static boolean isPP(String input) {

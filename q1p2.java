@@ -15,7 +15,7 @@ public class q1p2 {
 
   // vv inefficient sorting algorithm, improve later
   private static String sorted(String input) {
-    char[] inputArray = input.toCharArray();
+    char[] inputArray = input.toCharArray(); // Also apparently there is a built-in java method to sort an array.
     int minIndex;
     for (int i = 0; i < inputArray.length; i++) {
       minIndex = i;
@@ -28,6 +28,7 @@ public class q1p2 {
   }
 
   private static boolean isPermutation(String a, String b) {
+    if (a.length() != b.length()) {return false; }
     return sorted(a).equals(sorted(b));
   }
 
